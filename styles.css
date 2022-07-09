@@ -29,8 +29,7 @@ body{
 .game-selection-container .games{
 	width: 90%;
 	height: 100%;
-	font-size: 25px;
-	background-color: rebeccapurple;
+	font-size: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -60,23 +59,186 @@ body{
 }
 
 
+.main-modal-container{
+	position: absolute;
+	top: 0;
+	height: 0;
+	width: 100%;
+	background-color: rgb(43, 43, 43);
+	color: white;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 20% 80%;
+	align-items: center;
+	justify-items: center;
+	visibility: hidden;
+	opacity: 0;
+}
+.close-map-selection{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgb(197, 95, 95);
+	width: 100px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.main-modal-container .header{
+	font-size: 30px;
+}
+.map-selection-container{
+	display: grid;
+	justify-items: center;
+	width: 95%;
+	height: 100%;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-auto-rows: 200px;
+	grid-row-gap: 7%;
+}
+.map-selection-container .maps{
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 20px;
+	border-radius: 5px;
+	box-shadow: inset 2px 2px 5px black, inset -2px -2px 5px black, 5px 5px 10px rgb(27, 27, 27);
+	cursor: pointer;
+}
+
+.bo1-maps-container .maps:nth-child(1){
+	background-image: url("https://drive.google.com/uc?id=1Vr0MkcKSj4CiYY1M8fcrZ584cH-BwC-A");
+}
+.bo1-maps-container .maps:nth-child(2){
+	background-image: url("https://drive.google.com/uc?id=1v-r9vccObgnS4BMpZNPJbAhhQX2UVXOy");
+}
+.bo1-maps-container .maps:nth-child(3){
+	background-image: url("https://drive.google.com/uc?id=1HxORFm0_QsbIEkuxW-yIZsQxXgkwCLKX");
+}
+.bo1-maps-container .maps:nth-child(4){
+	background-image: url("https://drive.google.com/uc?id=1jBuyaBo-wv6TyoPlk4JHavIKqeJUMP5M");
+}
+.bo1-maps-container .maps:nth-child(5){
+	background-image: url("https://drive.google.com/uc?id=13S3X3LVlBwzSZ-zijuZdUzS607pSwrmv");
+}
+.bo1-maps-container .maps:nth-child(6){
+	background-image: url("https://drive.google.com/uc?id=12GDwXCPK-wh8n_MoHNFNNY2O-zFHWifM");
+}
+.bo1-maps-container .maps:nth-child(7){
+	background-image: url("https://drive.google.com/uc?id=1ExOo2OlJESWmqZUmLhngrZkPyFHAoA6y");
+}
+.bo1-maps-container .maps:nth-child(8){
+	background-image: url("https://drive.google.com/uc?id=15ibaE9_-xLHvx09SF4VfCj6H96x8N-Pv");
+}
+.bo1-maps-container .maps:nth-child(9){
+	background-image: url("https://drive.google.com/uc?id=1dsiz1ZNAua_iIoc2W_FdsMhWA5bh37MB");
+}
+.bo1-maps-container .maps:nth-child(10){
+	background-image: url("https://drive.google.com/uc?id=1eAQnVEWcezydlrK7VyG9AUw9gULDz79n");
+}
+
+.bo2-maps-container .maps:nth-child(1){
+	background-image: url("https://drive.google.com/uc?id=1gnqpbyoIgX7lSa7ROD-Fxc6hvk4dVage");
+}
+.bo2-maps-container .maps:nth-child(2){
+	background-image: url("https://drive.google.com/uc?id=1uG6rrRVUbjx8cW3GuiDFEs5hJgIqRw6q");
+}
+.bo2-maps-container .maps:nth-child(3){
+	background-image: url("https://drive.google.com/uc?id=19l2mzJ6sR7gKzW7s9pxucmeBSQskxI2K");
+}
+.bo2-maps-container .maps:nth-child(4){
+	background-image: url("https://drive.google.com/uc?id=16lHD2g7kVNTK-IMEcYkCc0mr1460uniy");
+}
+.bo2-maps-container .maps:nth-child(5){
+	background-image: url("https://drive.google.com/uc?id=1j6O7--NWZiG0-o854NA3z_MLJHY_-iJE");
+}
+.bo2-maps-container .maps:nth-child(6){
+	background-image: url("https://drive.google.com/uc?id=1eu7rORA48yCKU6fp1NtiFfypcQLromB2");
+}
+.bo2-maps-container .maps:nth-child(7){
+	background-image: url("https://drive.google.com/uc?id=1FnV0usBFsao5NCuzkhJLb969mI3tBUZL");
+}
+.bo2-maps-container .maps:nth-child(8){
+	background-image: url("https://drive.google.com/uc?id=1dKmY0zGnaWLCghnePHqkP7WwcgUewl_U");
+}
+.bo2-maps-container .maps:nth-child(9){
+	background-image: url("https://drive.google.com/uc?id=1tnFbzATI2UmMPaoVseUlbXV_oc5DMq5s");
+}
+
+.bo3-maps-container .maps:nth-child(1){
+	background-image: url("https://drive.google.com/uc?id=1p8bOWXMGDSwhbnKfpS1WbDhikzM7iy3f");
+}
+.bo3-maps-container .maps:nth-child(2){
+	background-image: url("https://drive.google.com/uc?id=1v_h4uEhH2dyZtwKCDYI_AXzXOiLfuYOk");
+}
+.bo3-maps-container .maps:nth-child(3){
+	background-image: url("https://drive.google.com/uc?id=10PAFpHSqFC4W1xW-G-QJ2vrNaGiEwqJy");
+}
+.bo3-maps-container .maps:nth-child(4){
+	background-image: url("https://drive.google.com/uc?id=1RS9fSyStSOMNsmS68DdV6FjMbP4AiV30");
+}
+.bo3-maps-container .maps:nth-child(5){
+	background-image: url("https://drive.google.com/uc?id=1szAps5vYgFzPhg52piZnsKR_rVyiyv3p");
+}
+.bo3-maps-container .maps:nth-child(6){
+	background-image: url("https://drive.google.com/uc?id=1CTA4cD5pyAu-LlZPYQQ1iXAsl5cC75OF");
+}
+.bo3-maps-container .maps:nth-child(7){
+	background-image: url("https://drive.google.com/uc?id=1mibvZbtzhtXn8H4W311mv9E0WTp1Qg3o");
+}
+.bo3-maps-container .maps:nth-child(8){
+	background-image: url("https://drive.google.com/uc?id=1PlLpGZiV0pxU3g9MAMTcn4BQflcpR0eu");
+}
+.bo3-maps-container .maps:nth-child(9){
+	background-image: url("https://drive.google.com/uc?id=1NVc9P17OOg0qD1l3JUpX0DmVMQxFUZ4n");
+}
+.bo3-maps-container .maps:nth-child(10){
+	background-image: url("https://drive.google.com/uc?id=1ufn9tuliqxnBLSDC-Ih8AkXZFFGavMxT");
+}
+.bo3-maps-container .maps:nth-child(11){
+	background-image: url("https://drive.google.com/uc?id=13i4ybJOW915ddrreqRv-PsA59MpQRr1H");
+}
+.bo3-maps-container .maps:nth-child(12){
+	background-image: url("https://drive.google.com/uc?id=1sosoAQUPWJ7e1ftzhQGYGP2UePfW2stv");
+}
+.bo3-maps-container .maps:nth-child(13){
+	background-image: url("https://drive.google.com/uc?id=1ph6BGoekix6Xd8ghRuCeeFHRa73G9GW3");
+}
+.bo3-maps-container .maps:nth-child(14){
+	background-image: url("https://drive.google.com/uc?id=1FOu97SeRVr7XJtNd1FCCiFNLdvgof3Hx");
+}
+
+.show-modal-JS{
+	height: 100vh;
+	opacity: 1;
+	visibility: visible;
+	transition: 500ms;
+}
+.hide-modal-JS{
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: 500ms;
+}
+
 @media (max-width: 1300px) {
-	.game-selection-container{
+	.game-selection-container, .map-selection-container{
 		grid-template-columns: 33.333% 33.333% 33.333%;
 	}
 }
 @media (max-width: 800px) {
-	.game-selection-container{
-		grid-template-columns: 50% 50%;
-	}
-}
-@media (max-width: 800px) {
-	.game-selection-container{
+	.game-selection-container, .map-selection-container{
 		grid-template-columns: 50% 50%;
 	}
 }
 @media (max-width: 500px) {
-	.game-selection-container{
+	.game-selection-container, .map-selection-container{
 		grid-template-columns: 100%;
 	}
 }
