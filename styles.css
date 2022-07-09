@@ -40,7 +40,7 @@ body{
 	box-shadow: inset 2px 2px 5px black, inset -2px -2px 5px black, 5px 5px 10px rgb(27, 27, 27);
 	cursor: pointer;
 }
-.game-selection-container .games span{
+.game-selection-container .games span, .map-selection-container .maps span{
 	background-color: rgba(0, 0, 0, 0.712);
 	padding: 5px 10px 5px 10px;
 }
@@ -61,6 +61,7 @@ body{
 
 .main-modal-container{
 	position: absolute;
+	overflow: hidden;
 	top: 0;
 	height: 0;
 	width: 100%;
@@ -74,7 +75,7 @@ body{
 	visibility: hidden;
 	opacity: 0;
 }
-.close-map-selection{
+.close-map-selection, .close-map-stats{
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -219,13 +220,81 @@ body{
 	opacity: 1;
 	visibility: visible;
 	transition: 500ms;
+	overflow-y: auto;
 }
 .hide-modal-JS{
+	overflow: hidden;
 	height: 0;
 	opacity: 0;
 	visibility: hidden;
 	transition: 500ms;
 }
+
+
+
+.game-stats-container{
+	position: absolute;
+	top: 0;
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
+	width: 100%;
+	background-color: rgb(43, 43, 43);
+	color: white;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 20% 80%;
+	justify-items: center;
+	align-items: center;
+}
+.game-stats-container .header{
+	font-size: 30px;
+}
+.stats{
+	font-size: 20px;
+	width: 90%;
+	height: 90%;
+	display: grid;
+	align-content: flex-start;
+}
+.accordion-panel{
+	background-color: rgb(255, 255, 255);
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	height: 0;
+	opacity: 0;
+	font-size: 0;
+	height: fit-content;
+	transition: 500ms;
+	padding: 0 0 0 25px;
+}
+.stats-categorie{
+	padding: 0 0 0 25px;
+	background-color: rgb(19, 19, 19);
+	display: flex;
+	align-items: center;
+	height: 80px;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+}
+.open-accordion-JS{
+	opacity: 1;
+	transition: 500ms;
+	font-size: 18px;
+}
+.show-gamestats-JS{
+	height: 100vh;
+	opacity: 1;
+	visibility: visible;
+	transition: 500ms;
+}
+.hide-gamestats-JS{
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: 500ms;	
+}
+
 
 @media (max-width: 1300px) {
 	.game-selection-container, .map-selection-container{

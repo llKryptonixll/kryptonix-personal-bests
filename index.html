@@ -45,34 +45,34 @@
 			<div class="header">Select a map</div>
 
 			<div class="map-selection-container bo1-maps-container">
-				<div class="maps">
+				<div data-maps="kino-der-toten-bo1" class="maps">
 					<span>Kino der Toten</span>
 				</div>
-				<div class="maps">
+				<div data-maps="five-bo1" class="maps">
 					<span>Five</span>
 				</div>
-				<div class="maps">
+				<div data-maps="ascension-bo1" class="maps">
 					<span>Ascension</span>
 				</div>
-				<div class="maps">
+				<div data-maps="call-of-the-dead-bo1" class="maps">
 					<span>Call of the Dead</span>
 				</div>
-				<div class="maps">
+				<div data-maps="shang-bo1" class="maps">
 					<span>Shagri-La</span>
 				</div>
-				<div class="maps">
+				<div data-maps="moon-bo1" class="maps">
 					<span>Moon</span>
 				</div>
-				<div class="maps">
+				<div data-maps="nacht-der-untoten-bo1" class="maps">
 					<span>Nacht der Untoten</span>
 				</div>
-				<div class="maps">
+				<div data-maps="verrückt-bo1" class="maps">
 					<span>Verrückt</span>
 				</div>
-				<div class="maps">
+				<div data-maps="shino-bo1" class="maps">
 					<span>Shi No Numa</span>
 				</div>
-				<div class="maps">
+				<div data-maps="der-riese-bo1" class="maps">
 					<span>Der Riese</span>
 				</div>
 			</div>
@@ -120,7 +120,7 @@
 
 		<!-- black ops 3 modal -->
 		<div id="BO3" class="main-modal-container bo3">
-			
+
 			<div class="close-map-selection">Close</div>
 
 			<div class="header">Select a map</div>
@@ -172,6 +172,65 @@
 
 		</div>
 	</section>
+
+	<!-- game stats modals -->
+	<div id="kino-der-toten-bo1" class="game-stats-container">
+		<div class="close-map-stats">Close</div>
+
+		<div class="header">Round: 227 Reset</div>
+
+		<div class="stats">
+			<div data-accordion="times" class="Times stats-categorie open-acc-panel">Times</div>
+			<div id="times" class="accordion-panel">
+			&nbsp&nbsp30: 00:32:50<br>
+			&nbsp&nbsp50: 01:21:34<br>
+			&nbsp&nbsp70: 02:50:00<br>
+			   100: 07:23:28<br>
+			   110: 09:43:37<br>
+			   120: 12:14:11<br>
+			   130: 15:40:33<br>
+			   140: 19:47:52<br>
+			   150: 24:45:37<br>
+			   163: 31:53:51<br>
+			   170: 34:37:40<br>
+			   180: 40:02:54<br>
+			   190: 45:44:42<br>
+			   200: 52:28:19<br>
+			   210: 60:17:23<br>
+			   220: 68:23:33<br>
+			   227 - Reset: 74:22:08
+			</div>
+			<div data-accordion="special-rounds" class="Special Rounds stats-categorie open-acc-panel">Special Rounds</div>
+			<div id="special-rounds" class="accordion-panel">
+				5, 9, 14, 19, 23, 27, 31, 36, 40, 45, 50, 55, 60, 64, 69, 74, 78, 83, 88, 93, 97, 101,<br>
+				106, 110, 115, 119, 123, 128, 132, 136, 141, 146, 151, 155, 159, 164, 168, 172, 177, 182,<br>
+				187, 192, 197, 202, 211, 216, 221, 225
+			</div>
+			<div data-accordion="trades" class="Trades stats-categorie open-acc-panel">Trades</div>
+			<div id="trades" class="accordion-panel">
+				121: [Trade Time: 00:00:27 | Box Hits: 2]<br>
+				131: [Trade Time: 00:03:43 | Box Hits: 20]<br>
+				139: [Trade Time: 00:04:22 | Box Hits: 19]<br>
+				143: [Trade Time: 00:21:10 | Box Hits: 110]<br>
+				148: [Trade Time: 00:02:51 | Box Hits: 16]<br>
+				153: [Trade Time: 00:01:25 | Box Hits: 4]<br>
+				157: [Trade Time: 00:00:51 | Box Hits: 5]<br>
+				161: [Trade Time: 00:25:24 | Box Hits: 111]<br>
+				179: [Trade Time: 00:00:10 | Box Hits: 1]<br>
+				199: [Trade Time: 00:04:10 | Box Hits: 24]<br>
+				208: [Box Hits: 7] mid Round<br>
+				212: [Box Hits: 6] mid Round<br>
+				220: [Box Hits: 21] mid Round<br>
+				226: [Box Hits: 25] mid Round<br>
+				<br>
+				[Total Trade Time: 01:05:50 | Total Box Hits: 387 | Total Trades: 14]
+			</div>
+			<div data-accordion="missed-instas" class="Missed Instas stats-categorie open-acc-panel">Missed Instas</div>
+			<div id="missed-instas" class="accordion-panel">
+				177, 197, 202, 211, 216, 225
+			</div>
+		</div>
+	</div>
 	
  	<script src="app.js"></script> 
  </body> 
