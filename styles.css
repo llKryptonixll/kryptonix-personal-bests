@@ -89,6 +89,7 @@ body{
 }
 .main-modal-container .header{
 	font-size: 30px;
+	text-align: center;
 }
 .map-selection-container{
 	display: grid;
